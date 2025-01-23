@@ -80,13 +80,13 @@ export const extractVideoId = (url) => {
   export const calculateProgress = (chapters) => {
     const totalChapters = chapters.length;
     
-    if (totalChapters === 0) return '0'; // Prevent division by zero and return as string
+    if (totalChapters === 0) return '0'; 
     
     const completedChapters = chapters.filter(chapter => chapter.is_completed).length;
     
     const progressPercentage = (completedChapters / totalChapters) * 100;
     
-    return Math.floor(progressPercentage).toString(); // Returns progress as a whole number string
+    return Math.floor(progressPercentage).toString(); 
   };
   
   

@@ -18,23 +18,24 @@ const YouTubeApp = ({ videoId }) => {
     <div className='block'>
       {videoId ? (
         // useIframe ? (
-        //   <iframe
-        //     title="YouTube Video"
-        //     width="560"
-        //     height="315"
-        //     src={`https://www.youtube.com/embed/${extractVideoId(videoId)}`}
+          // <iframe
+          //   title="YouTube Video"
+          //   width="560"
+          //   height="315"
+          //   src={`https://www.youtube.com/embed/${videoId}`}
 
-        //     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        //     allowFullScreen
-        //   />
+          //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          //   allowFullScreen
+          // />
         // ) : (
-          <YouTube videoId={extractVideoId(videoId)} opts={opts} />
+          <YouTube videoId={videoId} opts={opts} />
           // Use react-youtube if preferred
     
         
       ) : (
         <p>No video selected</p>
       )}
+      {/* {videoId} */}
     </div>
   );
 };

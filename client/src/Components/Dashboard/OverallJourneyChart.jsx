@@ -3,12 +3,12 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearSca
 import { Doughnut, Line } from 'react-chartjs-2';
 import { color } from 'chart.js/helpers';
 
-// Registering the required Chart.js components
+
 ChartJS.register(
-  ArcElement, // Required for Doughnut and Pie charts
+  ArcElement, 
   Tooltip,
   Legend,
-  CategoryScale, // Required for Line charts
+  CategoryScale, 
   LinearScale,
   PointElement,
   LineElement
@@ -64,7 +64,7 @@ const options = {
     plugins: {
       legend: {
         labels: {
-          color: 'white', // Color of the legend text
+          color: 'white', 
         },
       },
     },
